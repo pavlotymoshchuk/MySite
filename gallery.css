@@ -1,0 +1,354 @@
+#p_prldr {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/bgr-1.jpg);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    z-index: 30000000;
+}
+
+/* .scrollup {
+    opacity:0.35;
+    width: 60px;
+    height: 60px;
+    position:fixed;
+    bottom:150px;
+    right:10px;
+    display:none;
+    text-indent:-9999px;
+    background: url('img/icon_top.png') no-repeat;
+    background-size: 60px;
+    z-index: 10000;
+} */
+
+.contpre small {
+    font-size: 25px;
+}
+
+.contpre {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    margin-left: -125px;
+    margin-top: -75px;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: -2px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#p_prldr .svg_anm {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background: url(img/spinning-circles.svg) center center no-repeat;
+    background-size: 41px;
+    margin: -16px 0 0 -16px;
+}
+
+.none-padding {
+    padding: 0px !important;
+}
+
+.none-margin-hr {
+    margin: 0px !important;
+}
+
+.none-hr {
+    margin: 30px !important;
+}
+
+.margin-service {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+
+.main-head {
+    padding-top: 40px;
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: #FFFFFF;
+    z-index: 11000;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.navigation {
+    margin-top: 40px;
+    height: 50px;
+    z-index: 1;
+}
+
+.navigation ul {
+    height: 50px;
+    padding-left: 0px;
+    justify-content: center;
+}
+
+.navigation ul li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 350;
+    font-size: 17px;
+    justify-content: center;
+    height: 40px;
+    display: inline;
+    width: 100px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu img {
+    height: 10px;
+    margin-top: -3px;
+}
+
+.menu:hover {
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.menu h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 350;
+    font-size: 17px;
+    justify-content: center;
+    height: 40px;
+    display: inline;
+    width: 100px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.drop-menu {
+    font-weight: 370;
+    text-align: left;
+    font-size: 20px;
+}
+
+.drop-menu img {
+    margin-top: 10px;
+    padding-left: 5px;
+    float: left;
+    height: 0px;
+}
+
+ul.drop-menu {
+    border: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 20px;
+    border-radius: 5px;
+    position: absolute;
+    width: 250px;
+    background-color: white;
+    margin-left: -80px;
+    height: 130px;
+    display: none;
+}
+
+ul.drop-menu li {
+    padding-left: 20px;
+}
+
+ul.drop-menu li:hover {
+    font-weight: 450;
+    transition: all 0.1s ease-in;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+ul.nav>li:hover>ul.drop-menu {
+    display: block;
+}
+
+.navigation ul li:hover>img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+    margin-top: -4px;
+}
+
+ul.drop-menu li:hover>img {
+    transform: rotate(360deg);
+    margin-top: 5px;
+    height: 20px;
+    padding-left: 13px;
+    padding-right: 7px;
+    transition: all 0.45s ease-in;
+}
+
+.gallery-cont {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    border-left: 35px solid #fff;
+    border-right: 35px solid #fff;
+    padding-right: 0px;
+}
+
+.gallery-cont-txt img {
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+.gallery-cont-txt h1 {
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'BirchCTT', arial;
+    font-size: 55px;
+    text-align: center;
+    letter-spacing: 8px;
+    margin: 0px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.gallery-tabs {
+    margin-top: -50px;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-tabs ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.gallery-tabs ul li {
+    display: inline;
+}
+
+.gall-tab {
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    vertical-align: top;
+    color: #000000;
+    border: 1px solid #5b5b5b;
+}
+
+.all-but {
+    width: 60px;
+}
+
+.all-but:hover {
+    color: #FFFFFF;
+    width: 60px;
+    background-color: #000000;
+    transition: all 0.35s ease-in;
+}
+
+.portrait-but {
+    width: 100px;
+}
+
+.portrait-but:hover {
+    color: #FFFFFF;
+    width: 100px;
+    background-color: #000000;
+    transition: all 0.35s ease-in;
+}
+
+.landscape-but {
+    width: 110px;
+}
+
+.landscape-but:hover {
+    color: #FFFFFF;
+    width: 110px;
+    background-color: #000000;
+    transition: all 0.35s ease-in;
+}
+
+.movies-but {
+    width: 90px;
+}
+
+.movies-but:hover {
+    color: #FFFFFF;
+    width: 90px;
+    background-color: #000000;
+    transition: all 0.35s ease-in;
+}
+
+.active {
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: all 0.35s ease-in;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    height: 35vw;
+}
+
+.row-1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.show {
+    display: block;
+}
+
+.content {
+    width: 100%;
+    height: 35vw;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 30%;
+}
+
+.content img:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease-in;
+}
+
+.inst-tel-pin {
+    z-index: 1000;
+    position: fixed;
+    top: calc(50% - 120px);
+    bottom: calc(50% - 120px);
+    right: 0;
+    width: 80px;
+    height: 240px;
+}
+
+.inst-tel-pin img {
+    width: 60px;
+}
+
+
+
+.inst {
+    padding: 10px;
+}
+
+.tel {
+    padding: 10px;
+}
+
+
+.pin img{
+    width: 80px;
+}

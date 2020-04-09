@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Gallery by Pavlo Tymoshchuk  </title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/magnific-popup.css">
+	<link rel="shortcut icon" href="https://static.tildacdn.com/img/tildafavicon.ico" type="image/x-icon">
+	<link href="http://uk.allfont.net/allfont.css?fonts=birchctt" rel="stylesheet" type="text/css" />   
+
+</head>
+<body>
+	<div class="container-fluid none-padding">
+    			
+    			<div class="parallax__layer parallax__layer--base">
+ 	     			<div class="row none-margin-hr">
+						<div class="main-head justify-content" id="navbar">
+							<div class="col"> <h1 id="logo_text">Tymoshchuk art studio<h1></div>
+							<div class="navigation col" id="navig">
+								<ul class="nav d-flex">
+									<li class="menu">
+										<a href="main.html"> ГОЛОВНА </a>
+									</li>
+									<!--
+									<li class="menu">
+										<a href="#"> ПРО МЕНЕ </a>
+									</li>
+									-->
+									<li class="menu d-dlex">
+										<a href="#"><h1> ГАЛЕРЕЯ </h1></a>
+										<img src="img/dropdown-icon.png">
+										<ul class="drop-menu">
+											<li>
+												<img src="img/portrait.png">
+												<a onclick="filterSelection('portrait')"> Портретна фотозйомка </a> <br>
+											</li>
+											<li>
+												<img src="img/landscape.svg">
+												<a onclick="filterSelection('landscape')"> Пейзажна фотозйомка </a> <br>
+											</li>
+											<li>
+												<img src="img/movie.png">
+												<a onclick="filterSelection('movies')"> Відеозйомка </a> <br>
+											</li>
+										</ul>
+									</li>
+									<li class="menu">
+										<a href="retouch.html"> ДО/ПІСЛЯ </a>
+									</li>
+									<!--
+									<li class="menu">
+										<a href="#"> КОНТАКТИ </a>
+									</li>
+									-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row none-margin-hr">
+						<div class="gallery-cont">
+							<div class="row">
+								<div class="gallery-cont-txt">
+									<h1> ГАЛЕРЕЯ </h1><br>
+									<img src="img/divider.png">							
+								</div>
+							</div>
+							<div class="row none-hr">
+								<div class="gallery-tabs">
+									<ul>
+										<li>
+											<span class="gall-tab all-but active" id="all" onclick="filterSelection('all')">всі</span>
+										</li>
+										<li>
+											<span class="gall-tab portrait-but" id="portrait" onclick="filterSelection('portrait')">портрети</span>
+										</li>
+										<li>
+											<span class="gall-tab landscape-but" id="landscape" onclick="filterSelection('landscape')">пейзажі</span>
+										</li>
+										<li>
+											<span class="gall-tab movies-but" id="movies" onclick="filterSelection('movies')">відео</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row-1 none-hr carusel">								
+								 
+									<!-- 
+									<div class="column landscape">
+								    <div class="content">
+								    	<a class="carusell" href="img/Landscapes/landscape-1-min.JPG"><img src="img/Landscapes/landscape-1-min.JPG"  style="width:100%"></a>
+								    </div>
+									</div>
+
+									<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-2-min.JPG"><img src="img/Landscapes/landscape-2-min.JPG" style="width:100%"></a>
+								    </div>
+									</div>	
+
+									<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-3-min.JPG"><img src="img/Landscapes/landscape-3-min.JPG"  style="width:100%"></a>
+								    </div>
+									</div>
+
+									<div class="column movies">
+								    	<div class="content">
+								      		<a href="img/Movies/movie-1.JPG"><img src="img/Movies/movie-1.JPG" style="width:100%"></a>
+								    	</div>
+									</div>
+
+									<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-2.JPG"><img src="img/Movies/movie-2.JPG" style="width:100%"></a>
+								   	</div>
+									</div>
+
+									<div class="column movies">
+								    <div class="content">
+								     	<a class="carusell" href="img/Movies/movie-3.JPG"><img src="img/Movies/movie-3.JPG" style="width:100%"></a>
+								    </div>
+									</div> 
+									-->
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a href="img/Portrets/portrait-0-min.JPG"><img src="img/Portrets/portrait-0-min.JPG"  style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								    	<a class="carusell" href="img/Landscapes/landscape-1-min.JPG"><img src="img/Landscapes/landscape-1-min.JPG"  style="width:100%"></a>
+								    </div>
+								</div>
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-2-min.JPG"><img src="img/Portrets/portrait-2-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-3-min.JPG"><img src="img/Portrets/portrait-3-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								    <div class="content">
+								      	<a href="img/Movies/movie-1.JPG"><img src="img/Movies/movie-1.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-4-min.JPG"><img src="img/Portrets/portrait-4-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a href="img/Portrets/portrait-5-min.JPG"><img src="img/Portrets/portrait-5-min.JPG"  style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-2-min.JPG"><img src="img/Landscapes/landscape-2-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-6-min.JPG"><img src="img/Portrets/portrait-6-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-7-min.JPG"><img src="img/Portrets/portrait-7-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-2.JPG"><img src="img/Movies/movie-2.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-8-min.JPG"><img src="img/Portrets/portrait-8-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a href="img/Portrets/portrait-9-min.JPG"><img src="img/Portrets/portrait-9-min.JPG"  style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-3-min.JPG"><img src="img/Landscapes/landscape-3-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-10-min.JPG"><img src="img/Portrets/portrait-10-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-11-min.JPG"><img src="img/Portrets/portrait-11-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-3.JPG"><img src="img/Movies/movie-3.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-12-min.JPG"><img src="img/Portrets/portrait-12-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a href="img/Portrets/portrait-13-min.JPG"><img src="img/Portrets/portrait-13-min.JPG"  style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-4-min.JPG"><img src="img/Landscapes/landscape-4-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-14-min.JPG"><img src="img/Portrets/portrait-14-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-15-min.JPG"><img src="img/Portrets/portrait-15-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-4.JPG"><img src="img/Movies/movie-4.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-16-min.JPG"><img src="img/Portrets/portrait-16-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-17-min.JPG"><img src="img/Portrets/portrait-17-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-5-min.JPG"><img src="img/Landscapes/landscape-5-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-18-min.JPG"><img src="img/Portrets/portrait-18-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-19-min.JPG"><img src="img/Portrets/portrait-19-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-5.JPG"><img src="img/Movies/movie-5.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-20-min.JPG"><img src="img/Portrets/portrait-20-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-21-min.JPG"><img src="img/Portrets/portrait-21-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-6-min.JPG"><img src="img/Landscapes/landscape-6-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-22-min.JPG"><img src="img/Portrets/portrait-22-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-23-min.JPG"><img src="img/Portrets/portrait-23-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-6.JPG"><img src="img/Movies/movie-6.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-24-min.JPG"><img src="img/Portrets/portrait-24-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-25-min.JPG"><img src="img/Portrets/portrait-25-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-7-min.JPG"><img src="img/Landscapes/landscape-7-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-26-min.JPG"><img src="img/Portrets/portrait-26-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-27-min.JPG"><img src="img/Portrets/portrait-27-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-7.JPG"><img src="img/Movies/movie-7.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-28-min.JPG"><img src="img/Portrets/portrait-28-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-29-min.JPG"><img src="img/Portrets/portrait-29-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-8-min.JPG"><img src="img/Landscapes/landscape-8-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-30-min.JPG"><img src="img/Portrets/portrait-30-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-31-min.JPG"><img src="img/Portrets/portrait-31-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-8.JPG"><img src="img/Movies/movie-8.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-32-min.JPG"><img src="img/Portrets/portrait-32-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-33-min.JPG"><img src="img/Portrets/portrait-33-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-9-min.JPG"><img src="img/Landscapes/landscape-9-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-34-min.JPG"><img src="img/Portrets/portrait-34-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-35-min.JPG"><img src="img/Portrets/portrait-35-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-9.JPG"><img src="img/Movies/movie-9.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-36-min.JPG"><img src="img/Portrets/portrait-36-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+
+								<!-- GR -->
+
+
+							</div>
+						</div>
+					</div>
+					<div class="inst-tel-pin">
+                            <div class="inst">
+                                <a href="https://www.instagram.com/pavlo_tymoshchuk/" target="_blank"><img src="img/inst.png" id="image"></a>
+                            </div>
+                            <div class="tel">
+                                <a href="https://t.me/pavlo_tymoshchuk" target="_blank"><img src="img/teleg.png" id="image1"></a>
+                            </div>
+                            <div class="pin">
+                                <a href="https://www.pinterest.com/pavlo8520/photography/" target="_blank"><img src="img/pin.png" id="image2"></a>
+                            </div>
+                        </div>
+						<!--<a href="#" class="scrollup">Наверх</a>-->
+				</div>
+    		</div>
+
+  		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="dist/jquery.magnific-popup.js"></script>
+	<script src="dist/jquery.magnific-popup.min.js"></script>
+
+	<script type="text/javascript">
+        var star = document.getElementById('image'),
+        deg = 360;
+        setInterval(function() {
+            star.style.transform = "rotate(" + deg + "deg)";
+            deg = deg + 360
+        }, 8000);
+        var star1 = document.getElementById('image1'),
+        deg1 = 360;
+        setInterval(function() {
+            star1.style.transform = "rotate(" + deg1 + "deg)";
+            deg1 = deg1 + 360
+        }, 8000);
+        var star2 = document.getElementById('image2'),
+        deg2 = 360;
+        setInterval(function() {
+            star2.style.transform = "rotate(" + deg2 + "deg)";
+            deg2 = deg2 + 360
+        }, 8000);
+    </script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+		$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+		$('.scrollup').fadeIn();
+		} else {
+		$('.scrollup').fadeOut();
+		}
+		});
+		
+		$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+		});
+		
+		});
+	</script>
+
+	<script type="text/javascript">
+	$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+    $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');});
+
+	$('.carusel').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] 
+		}
+	});
+	</script>
+
+	<div id="p_prldr">
+		<div class="contpre">
+			<span class="svg_anm">
+			</span>
+			<br>
+			Please wait 
+			<br>
+			<small>
+				the page loads
+			</small>	
+		</div>
+	</div>
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+	var nav = document.getElementById("navbar");
+	var text = document.getElementById("logo_text");
+	var navig = document.getElementById("navig");
+	function scrollFunction() 
+	{
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) 
+		{
+			nav.style.height = "80px";
+			nav.style.paddingTop = "20px";
+			nav.style.transition = "all 1.5s";
+			text.style.transition = "all 1.5s";
+			navig.style.transition = "all 1.5s";
+			nav.className += " d-flex";
+			text.style.fontSize = "1.8rem"
+			navig.style.marginTop = "10px";
+			nav.style.opacity = "0.85"; 
+		} 
+		else
+		{
+			nav.style.height = "200px";
+			nav.className = " main-head justify-content";
+			nav.style.paddingTop = "40px";
+			text.style.fontSize = "2.5rem"
+			navig.style.marginTop = "40px";
+			nav.style.opacity = "1"; 
+		}
+	}
+</script>
+	
+</body>
+</html>

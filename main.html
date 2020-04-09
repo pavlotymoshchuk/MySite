@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Photo by Pavlo Tymoshchuk  </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="shortcut icon" href="https://static.tildacdn.com/img/tildafavicon.ico" type="image/x-icon">
+	<link href="http://uk.allfont.net/allfont.css?fonts=mon-amour-one-medium" rel="stylesheet" type="text/css" />
+	<link href="http://uk.allfont.net/allfont.css?fonts=birchctt" rel="stylesheet" type="text/css" />
+	<link href="http://uk.allfont.net/allfont.css?fonts=decor-cyrillic" rel="stylesheet" type="text/css" />
+	<link href="http://uk.allfont.net/allfont.css?fonts=calligraph" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="container-fluid none-padding">
+		<div class="parallax">
+    		<div class="parallax__group">
+    			<div class="parallax__layer parallax__layer--back">
+    				<div class="prl-1">
+    				</div>
+    				<div class="divide">
+    				</div>
+    				<div class="prl-2" id="prl">
+    				</div>
+    			</div>
+    			<div class="parallax__layer parallax__layer--base">
+					
+ 	     			<div class="row none-margin-hr " >
+						<div class="main-head justify-content" id="navbar">
+							<div class="col"> <h1 id="logo_text">Tymoshchuk art studio<h1></div>
+							<div class="navigation col" id="navig">
+								<ul class="nav d-flex">
+									<li class="menu">
+										<a href="#"><h1> ГОЛОВНА </h1></a>
+									</li>
+									<!--
+									<li class="menu">
+										<a href="#"> ПРО МЕНЕ </a>
+									</li>
+									-->
+									<li class="menu d-dlex">
+										<a href="gallery.html"> ГАЛЕРЕЯ </a>
+										<img src="img/dropdown-icon.png">
+										<ul class="drop-menu">
+											<li>
+												<img src="img/portrait.png">
+												<a href="gallery.html"> Портретна фотозйомка </a> <br>
+											</li>
+											<li>
+												<img src="img/landscape.svg">
+												<a href="gallery.html"> Пейзажна фотозйомка </a> <br>
+											</li>
+											<li>
+												<img src="img/movie.png">
+												<a href="gallery.html"> Відеозйомка </a> <br>
+											</li>
+										</ul>
+									</li>
+									<li class="menu">
+										<a href="retouch.html"> ДО/ПІСЛЯ </a>
+									</li>
+									<!--
+									<li class="menu">
+										<a href="#"> КОНТАКТИ </a>
+									</li>
+									-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center scroller" id="scroller"> 
+						<div class="col-lg-5 col-md-11 col-sm-11 col-11">
+							<div class="creative-studio">
+								<div class="creative-studio-text">
+									Creative Studio
+								</div>	
+								<div class="creative-studio-img">
+									<img src="img/divider.png">
+								</div>	
+								<div class="creative-studio-credo">
+									Все що ви можете уявити є можливим <br>
+									Тому я роблю ваші мрії реальними
+								</div>
+								<div class="row justify-content-center">
+									<div class="btn-creative">
+										<div class="btn-creative-txt">
+											<a href="https://t.me/pavlo_tymoshchuk" target="_blank">
+												ДЕТАЛІ
+											</a>
+										</div>
+									</div>
+								</div>
+					
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center col-about-us">
+						<div class="col-4">
+							<div class="about">
+								<img src="img/about-us-1.jpeg">
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="about">
+								<div class="about-center-log">
+									Про мене
+									<img src="img/divider.png">
+								</div>
+								<div class="about-text">
+									<h1>
+										Фотографія – це вміння укладати побачене в рамку,
+										а вміння укладати в рамку –
+										здатність вибирати одне і відмовлятися від іншого". </br>
+										Вже декілька років я працюю з фотоапаратом і вчусь цьому мистецтву </br>
+										Тому ласкаво прошу глянути чого я досягнув
+									</h1>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="about">
+								<img src="img/about-us-2.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="row none-margin-hr">
+						<div class="gallery-cont">
+							<div class="row">
+								<div class="gallery-cont-txt">
+									ГАЛЕРЕЯ <br>
+									<img src="img/divider.png">							
+								</div>
+							</div>
+							<div class="row none-hr">
+								<div class="gallery-tabs">
+									<ul>
+										<li>
+											<span class="gall-tab all-but active" onclick="filterSelection('all')">всі</span>
+										</li>
+										<li>
+											<span class="gall-tab portrait-but" onclick="filterSelection('portrait')">портрети</span>
+										</li>
+										<li>
+											<span class="gall-tab landscape-but" onclick="filterSelection('landscape')">пейзажі</span>
+										</li>
+										<li>
+											<span class="gall-tab movies-but" onclick="filterSelection('movies')">відео</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row-1 none-hr carusel">
+								<div class="column portrait">
+								    <div class="content">
+								      	<a href="img/Portrets/portrait-1-min.JPG"><img src="img/Portrets/portrait-1-min.JPG"  style="width:100%"></a>
+								    </div>
+								</div>
+								<div class="column landscape">
+								    <div class="content">
+								    	<a href="img/Landscapes/landscape-1-min.JPG"><img src="img/Landscapes/landscape-1-min.JPG"  style="width:100%"></a>
+								    </div>
+								</div>
+								<div class="column movies">
+								    <div class="content">
+								      	<a href="img/Movies/movie-1.JPG"><img src="img/Movies/movie-1.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								<div class="column movies">
+								   	<div class="content">
+								      	<a href="img/Movies/movie-2.JPG"><img src="img/Movies/movie-2.JPG" style="width:100%"></a>
+								   	</div>
+								</div>
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-2-min.JPG"><img src="img/Portrets/portrait-2-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-2-min.JPG"><img src="img/Landscapes/landscape-2-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>								
+								<div class="column landscape">
+								    <div class="content">
+								      	<a class="carusell" href="img/Landscapes/landscape-3-min.JPG"><img src="img/Landscapes/landscape-3-min.JPG"  style="width:100%"></a>
+								    </div>
+								</div>
+								<div class="column movies">
+								    <div class="content">
+								     	<a class="carusell" href="img/Movies/movie-3.JPG"><img src="img/Movies/movie-3.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+								<div class="column portrait">
+								    <div class="content">
+								      	<a class="carusell" href="img/Portrets/portrait-3-min.JPG"><img src="img/Portrets/portrait-3-min.JPG" style="width:100%"></a>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center"> 
+						<div class="col-lg-5 col-md-11 col-sm-11 col-11">
+							<div class="sale">
+								<div class="sale-text">
+									До 50% у цьому місяці
+								</div>	
+								<div class="sale-img">
+									<img src="img/divider.png">
+								</div>	
+								<div class="sale-credo">
+									З нагоди відкриття сайту я пропоную новим клієнтам цю знижку
+								</div>
+								<div class="row justify-content-center">
+									<div class="btn-creative">
+										<div class="btn-creative-txt">
+											<a href="B&W.dng" download>
+												Дізнатись ціну
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="service">
+							<div class="service-txt">
+								Послуги
+								<div class="service-img">
+									<img src="img/divider.png" style="margin-top: -20px;">
+								</div>
+							</div>
+							<div class="service-content">
+								<div class="row margin-service">
+									<div class="col-lg-4 col-md-4 col-sm-4 col-10">
+										<div class="service-content-landscape-img">
+										</div>
+										<div class="service-content-img-txt">
+											Пейзажна фотографія
+										</div>
+										<div class="service-content-text">
+											Природа дає нам свободу для створення чудових фотографій для будь-яких потреб
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-10">
+										<div class="service-content-portrait-img">
+										</div>
+										<div class="service-content-img-txt">
+											Портретна фотографія
+										</div>
+										<div class="service-content-text">
+											Художній знімок - прекрасний подарунок для ваших близьких у будь-якому випадку
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-10">
+										<div class="service-content-video-img">
+										</div>
+										<div class="service-content-img-txt">
+											Відеозйомка
+										</div>
+										<div class="service-content-text">
+											Створення та обробка професійного відео - це моя сильна сторона
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row none-margin-hr">
+						<div class="divider-1">
+							
+						</div>
+					</div>
+					<div class="row none-margin-hr justify-content-center main-team">
+
+						<div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 ">
+							<div class="team">
+								<div class="row none-margin-hr justify-content-center">
+									<div class="my-team">
+										Моя команда <br>
+										<img src="img/divider.png">							
+									</div>
+									<div class="owl-carousel">
+										<div class="carusellka">
+											<img src="img/roma.jpg" style="height: 70px; width: 70px; margin-left: calc(50% - 35px);">
+											<h1> 
+												Краса - це вічність, що триває мить. І тільки хороше фото може зупинити її надовго
+											</h1>
+											<a href="https://www.instagram.com/kotsyr_light/" target="_blank"> Роман Коцур </a>
+										</div>
+										<div class="carusellka">
+											<img src="img/rosia.jpg" style="height: 70px; width: 70px; margin-left: calc(50% - 35px);">
+											<h1> 
+												Як тільки глядачі почнуть заражатись тим же почуттям, яке відчував фотограф, це і є мистецтво
+											</h1>
+											<a href="https://www.instagram.com/abramchuk_roksolana/" target="_blank"> Роксолана Абрамчук </a>
+										</div>
+										<div class="carusellka">
+											<img src="img/pasha.jpg" style="height: 70px; width: 70px; margin-left: calc(50% - 35px);">
+											<h1>  
+												Натхнення ніколи не прийде до фотографа, який замість того, щоб працювати - буде тільки міркувати про мистецтво фотографії
+											</h1>
+											<a href="https://www.instagram.com/pavlo_tymoshchuk/" target="_blank"> Павло Тимощук </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
+							<div class="team">
+								<div class="row none-margin-hr justify-content-center">
+									<div class="my-team">
+										Контакти <br>
+										<img src="img/divider.png">							
+									</div>
+									<div class="find-us">
+										<div class="row"> 
+											Ви можете зв'язатися зі мною за допомогою телефону, електронної пошти або облікових записів соціальних медіа
+										</div>
+										<div class="row none-margin-hr"> 
+											<a href="tel:+380933577487" target="_blank"> +380933577487 </a> 
+										</div>
+										<div class="row none-margin-hr"> 
+											<a href="mailto:Pavlo25575@icloud.com" target="_blank"> Pavlo25575@icloud.com </a> 
+										</div>
+										<div class="row">
+											Instagram: <a href="https://www.instagram.com/pavlo_tymoshchuk/" target="_blank"> @pavlo_tymoshchuk </a>
+										</div>
+										<div class="row"> 
+											Telegram: <a href="https://t.me/pavlo_tymoshchuk" target="_blank"> pavlo_tymoshchuk </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
+							<div class="team"> 
+								<div class="row none-margin-hr justify-content-center frm">
+									<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EtCuRYaIc37RxlwnxknxGB0XtiQNxrOM" width="100%" height="100%"></iframe>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--
+					<div class="row none-margin-hr">
+						<div class="bottom-bar">
+							<div class="bottom-cont">
+								<div class="row none-margin-hr justify-content-center"> 
+									<div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+										<div class="text-bottom">
+											<h1> About </h1>
+											Photo by Pavlo Tymoshchuk is a team of enthusiasts who do their best to meet any client`s` demand and provide them with perfectly made photos.
+										</div>
+									</div>
+									<div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+										<div class="text-bottom">
+											<h1> Services </h1>
+											<ul class="bottom-menu">
+												<li>
+													<img src="img/portrait.png">
+													<a href="gallery.html"> Portrait photos </a> <br>
+												</li>
+												<li>
+													<img src="img/landscape.svg">
+													<a href="gallery.html"> Landscape photos </a> <br>
+												</li>
+												<li>
+													<img src="img/movie.png">
+													<a href="gallery.html"> Movies </a> <br>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					-->
+					<div class="inst-tel-pin">
+                            <div class="inst">
+                                <a href="https://www.instagram.com/pavlo_tymoshchuk/" target="_blank"><img src="img/inst.png" id="image"></a>
+                            </div>
+                            <div class="tel">
+                                <a href="https://t.me/pavlo_tymoshchuk" target="_blank"><img src="img/teleg.png" id="image1"></a>
+                            </div>
+                            <div class="pin">
+                                <a href="https://www.pinterest.com/pavlo8520/photography/" target="_blank"><img src="img/pin.png" id="image2"></a>
+                            </div>
+                        </div>
+						<!--<a href="#" class="scrollup">Наверх</a>-->
+				</div>
+    		</div>
+  		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="dist/jquery.magnific-popup.js"></script>
+	<script src="dist/jquery.magnific-popup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+    $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');});
+
+	$('.carusel').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] 
+		}
+	});
+	</script>
+
+	<!--
+		<script type="text/javascript">
+			$(document).ready(function(){
+			
+			$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+			} else {
+			$('.scrollup').fadeOut();
+			}
+			});
+			
+			$('.scrollup').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+			});
+			
+			});
+		</script>
+	-->
+
+	<script type="text/javascript">
+        var star = document.getElementById('image'),
+        deg = 360;
+        setInterval(function() {
+            star.style.transform = "rotate(" + deg + "deg)";
+            deg = deg + 360
+        }, 8000);
+        var star1 = document.getElementById('image1'),
+        deg1 = 360;
+        setInterval(function() {
+            star1.style.transform = "rotate(" + deg1 + "deg)";
+            deg1 = deg1 + 360
+        }, 8000);
+        var star2 = document.getElementById('image2'),
+        deg2 = 360;
+        setInterval(function() {
+            star2.style.transform = "rotate(" + deg2 + "deg)";
+            deg2 = deg2 + 360
+        }, 8000);
+    </script>
+
+	<div id="p_prldr">
+		<div class="contpre">
+			<span class="svg_anm">
+			</span>
+			<br>
+			Please wait 
+			<br>
+			<small>
+				the page loads
+			</small>	
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		
+$(function() {
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 1,
+    margin: 10,
+    loop: true,
+    nav: false,
+    
+    autoplay: true,
+    autoplayTimeout: 6000,
+    smartSpeed: 1000,
+  });
+});
+</script>
+
+<script>
+	window.onscroll = function() {scrollFunction()};
+	var nav = document.getElementById("navbar");
+	var text = document.getElementById("logo_text");
+	var navig = document.getElementById("navig");
+	function scrollFunction() 
+	{
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) 
+		{
+			nav.style.height = "80px";
+			nav.style.paddingTop = "20px";
+			nav.style.transition = "all 1.5s";
+			text.style.transition = "all 1.5s";
+			navig.style.transition = "all 1.5s";
+			nav.className = "main-head justify-content d-flex";
+			text.style.fontSize = "1.8rem"
+			navig.style.marginTop = "10px";
+			nav.style.opacity = "0.85"; 
+
+		} 
+		else
+		{
+			nav.style.height = "200px";
+			nav.className = " main-head justify-content";
+			nav.style.paddingTop = "40px";
+			text.style.fontSize = "2.5rem"
+			navig.style.marginTop = "40px";
+			nav.style.opacity = "1"; 
+		}
+	}
+</script>
+
+</body>
+</html>
